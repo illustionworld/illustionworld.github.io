@@ -86,15 +86,6 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-// Add parallax effect to hero section
-const heroSection = document.querySelector('.hero');
-if (heroSection) {
-    window.addEventListener('scroll', () => {
-        const scrolled = window.pageYOffset;
-        heroSection.style.backgroundPosition = `center ${scrolled * 0.5}px`;
-    });
-}
-
 // Console message for fun
 console.log('%cWelcome to Illustion World Portfolio!', 'color: #3b82f6; font-size: 24px; font-weight: bold;');
 console.log('%cCybersecurity Intern | SOC Analyst | Penetration Tester', 'color: #60a5fa; font-size: 14px;');
